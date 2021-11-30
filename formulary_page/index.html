@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">Survey example</p>
+        </div>
+        <form id="survey-form">
+            <!-- name -->
+          <div class="form-group">
+            <label id='name-label' for='name'>Name</label>
+            <input type="text" id="name" class='form-control' placeholder='Name' required>
+          </div>
+          <!-- email  -->
+              <div class="form-group">
+                <label id='email-label' for='email'>Email</label>
+                <input type="email" id="email" class='form-control' placeholder='Email' required>
+              </div>
+              <div class="form-group">
+                <label id='number-label' for='number'>Age</label>
+                <input type="number" min=18 max=99 id="number" class='form-control' placeholder='Age' required>
+              </div>
+              <div class="form-group">
+                <label id='dropdown-label' for='dropwdown'>Select your gender</label>
+               <select name="gender" id="dropdown">
+                <option value="masculine">F</option>
+                <option value="femenine">M</option> 
+               </select>
+            </div>
+            <!-- checkbox ocupation -->
+         <div class="form-group">
+           <label for="checkbox-label" id='checkbox-label'>Ocupation</label>
+           <label>
+             <input type="radio" value='student' class='input-radio' name='ocupation'>
+             Student
+           </label>
+                <label>
+             <input type="radio" value='Worker' class='input-radio' name='ocupation'>
+             Worker
+           </label>
+             <label>
+             <input type="radio" value='None' class='input-radio' name='ocupation'>
+             Non especify
+           </label>      
+         </div>
+         <!-- checkbox techs -->
+          <div class="form-group">
+            <label for="checkbox-label">
+              What technology do you prefer?
+            </label>
+            <label for="frontend">
+              <input type="checkbox" value='frontend'>
+              Frontend
+            </label>
+                  <label for="backend">
+              <input type="checkbox" value='backend'>
+              Backend
+            </label>
+                  <label for="fullstack">
+              <input type="checkbox" value='fullstack'>
+              Fullstack
+            </label>
+                <label for="mobile">
+              <input type="checkbox" value='mobile'>
+              Mobile
+            </label>
+          </div>
+          <!-- textarea comments or suggestions -->
+            <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <button class='btn btn--submit' id='submit'>Submit</button>
+          
+        </form>
+      </div>
+      
+</body>
+</html>

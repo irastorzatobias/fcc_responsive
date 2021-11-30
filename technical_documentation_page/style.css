@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,200&display=swap");
+
+:root {
+  --background: #000957;
+  --card-border: #344cb7;
+  --card-background: #577bc1;
+  --decoration: #ebe645;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--card-border);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+/* header */
+
+#header {
+  font-size: 2rem;
+  border: 1px solid white;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+  #header {
+      padding: 1.5rem;
+  }
+}
+
+.celeste {
+  color: var(--card-background);
+}
+
+.amarillo {
+  color: var(--decoration);
+}
+
+/* navbar */
+.navbar h1 {
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 2rem;
+  /* border: 0.1rem solid white; */
+}
+
+.navbar li {
+  border: 1px solid white;
+  padding: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* main doc */
+
+#main-doc {
+  background-color: var(--card-border);
+  min-height: 100vh;
+  min-width: auto;
+  color: #fff;
+}
+
+/* main section */
+
+.main-section header h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.main-section {
+  padding: 2rem;
+  border: 1px solid white;
+}
+
+.main-section__place {
+  /* font-size: 2rem; */
+  background-color: var(--card-background);
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* travel */
+#Por_donde_viajar {
+  text-align: center;
+}
+
+.travel-link {
+  text-decoration: none;
+  color: white;
+
+}
+
+ul {
+  list-style-type: none;
+}
+/* backgrounds */
+
+#Verano {
+  background-color: #FF8243;
+}
+
+#Verano > .main-section__place {
+  background-color: #FDA65D;
+}
+
+#Otoño {
+  background-color: #472f05;
+}
+
+#Otoño > .main-section__place {
+  background-color: #871c0e;
+}
+
+
+#Invierno {
+  background-color: #2c3646;
+}
+
+#Invierno > .main-section__place {
+  background-color: #7c8491;
+}
+
+#Primavera {
+  background-color: #B1E693;
+}
+
+#Primavera > .main-section__place {
+  background-color: #6ECB63;
+}
+
