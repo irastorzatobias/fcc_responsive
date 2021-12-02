@@ -56,6 +56,10 @@ body {
     color: var(--main-white);
     font-size: 2rem;
     cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.3rem;
 }
 
 @media (min-width:768px) {
@@ -136,7 +140,9 @@ a {
 
 /* projects tile */
 
-
+a.project-tile {
+    transition: box-shadow 300ms ease-in;
+}
 
 a.project-tile:hover {
     box-shadow: 0 1rem 1rem var(--main-gray);
@@ -199,11 +205,12 @@ h1.project-title {
 }
 
 .contact-links a {
-    color: var(--main-white)
+    color: var(--main-white);
+    transition: transform 0.4s linear;
 }
 
 .contact-links a:hover {
-    transform: translateY(1px);
+    transform: translateY(-2px);
 }
 
 /* footer */

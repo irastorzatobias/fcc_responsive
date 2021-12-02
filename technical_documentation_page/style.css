@@ -72,12 +72,17 @@ body {
 .navbar li {
   border: 1px solid white;
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+li:hover {
+  background-color: var(--card-background);
 }
 
 /* main doc */
@@ -118,6 +123,8 @@ body {
 /* travel */
 #Por_donde_viajar {
   text-align: center;
+  font-size: 1.5rem;
+  transition: all 400ms ease-in-out;
 }
 
 .travel-link {
@@ -133,10 +140,13 @@ ul {
 
 #Verano {
   background-color: #FF8243;
+  margin-bottom: 2rem;
 }
 
 #Verano > .main-section__place {
   background-color: #FDA65D;
+  /* background-color: #FF8243; */
+
 }
 
 #Otoño {
